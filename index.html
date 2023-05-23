@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./index.js"></script>
+  
+  <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
+
+
+</head>
+<body class="light-theme">
+
+  <header>
+    <div class="navigation-container">
+      <picture class="logo">
+        <a href="#"><img src="./images/logo.svg" alt=""></a>
+      </picture>
+
+      <label class="switch">
+        <input type="checkbox" id="checkbox">
+        <span class="slider"></span>
+      </label>
+
+      <nav class="primary-nav">
+        <a href="#">Features</a>
+        <a href="#">Team</a>
+        <a href="#">Sign In</a>
+      </nav>
+    </div>
+  </header>
+  
+  
+  <main>
+
+    <section class="hero">
+      <picture class="wave-bg">
+        <source media="(min-width:1024px)" srcset="./images/bg-curvy-desktop.svg">
+        <img src="./images/bg-curvy-mobile.svg" alt="">
+      </picture>
+
+      <div class="wrapper hero-content">
+        <img src="./images/illustration-intro.png" alt="">
+        <h1>All your files in one secure location, accessible anywhere.</h1>
+        <p>Fylo stores all your most important files in one secure location. Access them wherever 
+          you need, share and collaborate with friends family, and co-workers.</p>
+        <button id="get-started">
+          <a href="#">Get Started</a>
+        </button>
+      </div>
+    </section>
+
+    <section>
+      <div class="fylo-info">
+        <div class="wrapper fylo-info-content">
+          <img src="./images/icon-access-anywhere.svg" alt="">
+          <h5>Access your files, anywhere</h5>
+          <p>The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.</p>
+        </div>
+
+        <div class="wrapper fylo-info-content">
+          <img src="./images/icon-security.svg" alt="">
+          <h5>Security you can trust</h5>
+          <p>2-factor authentication and user-controlled encryption are just a couple of the security 
+            features we allow to help secure your files.</p>
+        </div>
+
+        <div class="wrapper fylo-info-content">
+          <img src="./images/icon-collaboration.svg" alt="">
+          <h5>Real-time collaboration</h5>
+          <p> Securely share files and folders with friends, family and colleagues for live collaboration. 
+            No email attachments required.</p>
+        </div>
+
+        <div class="wrapper fylo-info-content">
+          <img src="./images/icon-any-file.svg" alt="">
+          <h5>Store any type of file</h5>
+          <p>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all 
+            file types to be securely stored and shared.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrapper stay-productive">
+        <img src="./images/illustration-stay-productive.png" alt="" class="stay-productive-img">
+        <div>
+          <h2>Stay productive, wherever you are</h2>
+          <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file 
+            storage needs.</p>
+          <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email 
+            attachments required.</p>
+          <div class="link-to-howFyloWorks">
+            <a href="#">See how Fylo works</a>
+            <img src="./images/icon-arrow.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimony-section">
+
+      <div class="wrapper testimony">
+
+        <div class="first-testimony">
+          <div class="testimony-contents">
+            <img src="./images/bg-quotes.png" alt="" class="big-quote">
+            <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+              become a well-oiled collaboration machine.</p>
+              <div class="profile">
+                <img src="./images/profile-1.jpg" alt="">
+                <p>Satish Patel 
+                  <br>
+                  <span>Founder & CEO, Huddle</span>
+                </p>
+              </div>
+          </div>
+        </div>
+        
+
+        <div class="testimony-contents">
+          <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+            become a well-oiled collaboration machine.</p>
+            <div class="profile">
+              <img src="./images/profile-2.jpg" alt="">
+              <p>Bruce McKenzie 
+                <br>
+                <span>Founder & CEO, Huddle</span>
+              </p>
+            </div>
+        </div>
+
+        <div class="testimony-contents">
+          <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+            become a well-oiled collaboration machine.</p>
+            <div class="profile">
+              <img src="./images/profile-3.jpg" alt="">
+              <p>Iva Boyd 
+                <br>
+                <span>Founder & CEO, Huddle</span>
+              </p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="email-bg">
+      <div class="wrapper email">
+        <h2>Get early access today</h2>
+        <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
+          questions, our support team would be happy to help you.
+        </p>
+        <form action="" id="email-form">
+          <div class="input-container">
+            <input type="text" id="email" placeholder="email@example.com" class="email-input-btn">
+            <p id="error-display"></p>
+          </div>
+          <button type="submit" id="btn" class="email-input-btn">Get Started For Free</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+
+    <div class="wrapper footer-container">
+
+      <div class="footer-logo"><img src="./images/logo.svg" alt=""></div>
+
+      <div class="footer-info">
+
+        <div class="footer-flex-gap-margin-bottom">
+          <img src="./images/icon-location.svg" alt="" class="footer-icon">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+            dolore magna aliqua</p>
+        </div>
+
+        <div class="contact">
+          <div class="footer-flex-gap-margin-bottom">
+            <img src="./images/icon-phone.svg" alt="" class="footer-icon">
+            <p>+1-543-123-4567</p>
+          </div>
+          <div class="footer-flex-gap-margin-bottom">
+            <img src="./images/icon-email.svg" alt="" class="footer-icon">
+            <p>example@fylo.com</p>
+          </div>
+        </div>
+
+        <div class="footer-grid-gap">
+          <p>About Us</p>
+          <p>Jobs</p>
+          <p>Press</p>
+          <p>Blog</p>
+        </div>
+
+        <div class="footer-grid-gap">
+          <p>Contact Us</p>
+          <p>Terms</p>
+          <p>Privacy</p>
+        </div>
+
+        <div class="social-icons">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"/></svg>
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- Features
+
+
+
+  Get early access today
+
+  It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
+  questions, our support team would be happy to help you.
+
+  Get Started For Free
+
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+  dolore magna aliqua
+
+  +1-543-123-4567
+  example@fylo.com
+
+  About Us
+  Jobs
+  Press
+  Blog
+
+  Contact Us
+  Terms
+  Privacy -->
+
+
+</body>
+</html>
